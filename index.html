@@ -1,0 +1,182 @@
+<!doctype html>
+
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Canto dos Contos</title>
+ 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+  <nav>
+    <section class="nav-container">
+		<aside class="logo"><img src="data:image/png;base64,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"></aside>
+      <aside class="menu">
+        <div class="menu-content">
+          <a href="#" id="login">Login</a> | <a href="#" id="registrar">Registrar</a>
+        </div>
+        <div class="arrow-up"></div>
+      </aside>
+      <div class="login-form">
+        <form>
+          <label>Usuário</label>
+          <div id="usuario">
+            <input type="text" placeholder="Usuário" required />
+          </div>
+          <label>Password</label>
+          <div id="password">
+            <input type="password" placeholder="Password" required />
+          </div>
+          <div id="logar">
+            <input type="submit" value="Log In" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </nav>
+
+  <div class="barramenu" id="barramenu">
+    <a href="#recentes">Recentes</a>
+    <a href="#pesquisar">Pesquisar</a>
+  </div>
+
+  <section class="conteudos-container">
+    <div class="qsomos">
+      <h1>Quem Somos</h1>
+      <p>
+        yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy<br>
+        yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy<br>
+        yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy<br>
+      </p>
+    </div>
+    <div class="pesquisa">
+      <h1>Pesquisa</h1>
+
+      <form>
+        <p>Categorias de conto:</p>
+        <input type="checkbox" id = "ck0" name="acao" value="Animes / Mangás">  Animes / Mangás
+        <input type="checkbox" id = "ck1" name="vehicle2" value="Bandas / Cantores"> Bandas / Cantores
+        <input type="checkbox" id = "ck2" name="vehicle1" value="Filmes"> Filmes
+        <input type="checkbox" id = "ck3" name="vehicle2" value="Livros">  Livros
+        <input type="checkbox" id = "ck4" name="vehicle2" value="Originais">  Originais
+        <input type="checkbox" id = "ck5" name="vehicle1" value="Poesias">  Poesias <br>
+        <input type="checkbox" id = "ck6" name="vehicle2" value="Quadrinhos">Quadrinhos
+        <input type="checkbox" id = "ck7" name="vehicle2" value="Seriados/Novelas/Doramas"> Seriados / Novelas / Doramas<br>
+		<button type = "button" onclick = "checkck()">Pesquisar</button>
+		 <script type = "text/javascript">
+		function checkck(){
+		var str = "";
+		var cont = 0;
+		if(document.getElementById("ck0").checked == true){
+		var x= document.getElementById("ck0").value;
+		str = str + x + "   ";
+		cont++;
+		}if(document.getElementById("ck1").checked == true){
+		var q = document.getElementById("ck1").value;
+		str = str + q + "   ";
+		cont++;
+		}if(document.getElementById("ck2").checked == true){
+		var v = document.getElementById("ck3").value;
+		str = str + v + "   ";
+		cont++;
+		}if(document.getElementById("ck4").checked == true){
+		var t = document.getElementById("ck4").value;
+		str = str + t + "   ";
+		cont++;
+		}if(document.getElementById("ck5").checked == true){
+		var f = document.getElementById("ck5").value;
+		str = str + f + "   ";
+		cont++;
+		}if(document.getElementById("ck6").checked == true){
+		var l = document.getElementById("ck6").value;
+		str = str + l + "   ";
+		cont++;
+		}if(document.getElementById("ck7").checked == true){
+		var z = document.getElementById("ck7").value;
+		str = str + z + "   ";
+		cont++;
+		}if(cont > 0){		
+		alert("Lamentamos muito mas a(s) categoria(s) a seguir não se encontram em nosso site:  " + str);
+		}else{
+		alert("Você precisa selecionar alguma categoria para fazer a pesquisa.")
+		}
+		}
+		function erroclick(){
+		alert("Atividade indisponível");
+		}
+		</script>
+      </form>
+    </div>
+  </section>
+
+  <section class="propaganda" onclick="erroclick()">
+
+  </section>
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+
+    window.onload = function () {
+      alert("Bem-vindo ao Canto dos Contos!!");
+    }
+
+
+    $(document).ready(function () {
+      var arrow = $(".arrow-up");
+      var form = $(".login-form");
+      var status = false;
+      $("#login").click(function (event) {
+        event.preventDefault();
+        if (status == false) {
+          arrow.fadeIn();
+          form.fadeIn();
+          status = true;
+        } else {
+          arrow.fadeOut();
+          form.fadeOut();
+          status = false;
+        }
+      })
+
+
+       $(".login-form").submit(function () {
+          var user = $("input:first").val();
+          alert("Caro(a) " + user + ", o sistema de login não está funcionando corretamente no momento. Aguarde futuras atualizações.");
+          event.preventDefault();
+        })
+
+
+      
+      
+
+      $("#registrar").click(function () {
+        alert("Área indisponível no momento!");
+      })
+
+    })
+
+  
+
+  </script>
+
+  <ap-root></ap-root>
+</body>
+</html>
